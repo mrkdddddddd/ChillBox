@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.nav {
+  width: 100vw;
+  height: 120px;
+  border-bottom: 1px solid gray;
+  background-color: #503396;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+}
+.navdiv {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  justify-content: space-evenly;
+}
+.logo {
+  flex-grow: 1;
+}
+.container {
+  width: 1000px;
+  height: auto;
+  flex-grow: 1;
+}
+
+.fontNav {
+  font-size: 32px;
+  color: #ffffff;
+  width: 100vw;
+  height: 120px;
+}
+
+/* font-size
+navSize-32px
+tabSize-24px
+detail-16px */
