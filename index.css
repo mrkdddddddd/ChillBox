@@ -10,7 +10,20 @@ body {
   flex-grow: 1;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* font-size
 navSize-32px
 tabSize-24px
-detail-16px */
+detail-16px 
+
+색상
+#503396
+#000000
+#ffffff
+#252451
+*/

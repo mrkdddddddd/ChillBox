@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="data" href="../../common/data/tmp_data.json" />
+    <title>빠른예매</title>
+  </head>
+  <body>
+    <div class="container">
+      <p class="path">
+        <i class="fa-solid fa-house"></i>
+        > 예매 > 빠른예매
+      </p>
+
+      <h2>빠른예매</h2>
+
+      <div class="booking-box">
+        <div class="category-header">
+          <div class="category">영화</div>
+          <div class="category">날짜</div>
+          <div class="category">시간</div>
+        </div>
+
+        <div class="content-area">
+          <div class="movie-list"></div>
+
+          <div class="date-area"><div class="date-grid"></div></div>
+          <div class="time-area">
+            <div class="time-content"></div>
+          </div>
+        </div>
+
+        <div class="selected-movie-area">
+          <div class="selected-movie-label">선택한 영화</div>
+          <div class="selected-movie-content">
+            <div class="no-movie-message">영화를 선택하세요</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../jquery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      let selectedMovies = [];
+      let allMovies = [];
+      let selectedDate = "";
+      let selectedTimeSlot = "";
+
+      $(function () {
+        function getMovieIdFromUrl() {
+          const urlParams = new URLSearchParams(window.location.search);
+          return urlParams.get("movieId");
+        }
+
+        const preSelectedMovieId = getMovieIdFromUrl();
+
+        createDateList();
+
+        $.get("../../common/data/tmp_data.json", function (data) {
+          console.log("데이터 로드됨");
+          allMovies = data.movie;
+
+          $(".movie-list").empty();
+
+          $.each(allMovies, function (index, movie) {
+            const movieId = index + 1;
+            const age = parseInt(movie.grade);
+
+            let bgColor = "lightgray";
+            let ageText = "전체";
+
+            if (age == 12) {
+              bgColor = "yellowgreen";
+              ageText = "12";
+            } else if (age == 15) {
+              bgColor = "orange";
+              ageText = "15";
+            } else if (age == 19) {
+              bgColor = "red";
+              ageText = "19";
+            }
+
+            const movieItem = $(
+              '<div class="movie-item" data-movie-id="' +
+                movieId +
+                '">' +
+                '<div class="age-rating" style="background-color: ' +
+                bgColor +
+                ';">' +
+                ageText +
+                "</div>" +
+                '<div class="movie-name">' +
+                movie.name +
+                "</div>" +
+                "</div>"
+            );
+
+            $(".movie-list").append(movieItem);
+
+            if (preSelectedMovieId && movieId == preSelectedMovieId) {
+              selectMovie(movieId, movie);
+              movieItem.addClass("selected");
+              updateSelectedMoviesUI();
+            }
+          });
+
+          $(document).on("click", ".movie-item", function () {
+            const movieId = $(this).data("movie-id");
+            const movieIndex = movieId - 1;
+            const movie = allMovies[movieIndex];
+
+            const isSelected = $(this).hasClass("selected");
+
+            if (isSelected) {
+              $(this).removeClass("selected");
+              removeMovie(movieId);
+            } else {
+              if (selectedMovies.length >= 3) {
+                alert("최대 3개의 영화만 선택할 수 있습니다.");
+                return;
+              }
+
+              $(this).addClass("selected");
+              selectMovie(movieId, movie);
+            }
+
+            updateSelectedMoviesUI();
+          });
+        });
+      });
+
+      function createDateList() {
+        const dateGrid = $(".date-grid");
+        const today = new Date();
+
+        for (let i = 0; i < 14; i++) {
+          const date = new Date(today);
+          date.setDate(today.getDate() + i);
+
+          const year = date.getFullYear();
+          const month = date.getMonth() + 1;
+          const day = date.getDate();
+          const dayOfWeek = ["일", "월", "화", "수", "목", "금", "토"][
+            date.getDay()
+          ];
+
+          let dayClass = "";
+          if (date.getDay() === 0) dayClass = "sunday";
+          if (date.getDay() === 6) dayClass = "saturday";
+
+          const dateItem = $(
+            '<div class="date-item ' +
+              dayClass +
+              '" data-date="' +
+              year +
+              "-" +
+              month +
+              "-" +
+              day +
+              '">' +
+              '<div class="date-day">' +
+              month +
+              "/" +
+              day +
+              "</div>" +
+              '<div class="date-weekday">' +
+              dayOfWeek +
+              "</div>" +
+              "</div>"
+          );
+
+          if (i === 0) {
+            dateItem.addClass("selected");
+            selectedDate = year + "-" + month + "-" + day;
+          }
+
+          dateGrid.append(dateItem);
+        }
+
+        $(document).on("click", ".date-item", function () {
+          $(".date-item").removeClass("selected");
+          $(this).addClass("selected");
+
+          selectedDate = $(this).data("date");
+
+          updateShowtimes();
+        });
+      }
+
+      function selectMovie(movieId, movie) {
+        const exists = selectedMovies.some((m) => m.id === movieId);
+        if (!exists) {
+          selectedMovies.push({
+            id: movieId,
+            name: movie.name,
+            poster: movie.imgSrc,
+            grade: movie.grade,
+          });
+        }
+      }
+
+      function removeMovie(movieId) {
+        selectedMovies = selectedMovies.filter((movie) => movie.id !== movieId);
+        $(".movie-item[data-movie-id='" + movieId + "']").removeClass(
+          "selected"
+        );
+      }
+
+      function updateSelectedMoviesUI() {
+        const container = $(".selected-movie-content");
+        container.empty();
+
+        if (selectedMovies.length === 0) {
+          container.append(
+            '<div class="no-movie-message">영화를 선택하세요</div>'
+          );
+        } else {
+          const moviePosters = $('<div class="movie-posters"></div>');
+
+          selectedMovies.forEach((movie) => {
+            let bgColor = "lightgray";
+            let ageText = "전체";
+            const age = parseInt(movie.grade);
+
+            if (age == 12) {
+              bgColor = "yellowgreen";
+              ageText = "12";
+            } else if (age == 15) {
+              bgColor = "orange";
+              ageText = "15";
+            } else if (age == 19) {
+              bgColor = "red";
+              ageText = "19";
+            }
+            console.log("movie", movie.poster);
+            const posterDiv = $(
+              '<div class="movie-poster">' +
+                '<img src="' +
+                movie.poster +
+                '" class="poster-img">' +
+                '<div class="movie-title">' +
+                movie.name +
+                "</div>" +
+                '<button class="remove-btn" data-movie-id="' +
+                movie.id +
+                '">×</button>' +
+                "</div>"
+            );
+
+            moviePosters.append(posterDiv);
+          });
+
+          container.append(moviePosters);
+        }
+
+        $(document).on("click", ".remove-btn", function (e) {
+          e.stopPropagation();
+          const movieId = $(this).data("movie-id");
+          removeMovie(movieId);
+          updateSelectedMoviesUI();
+          updateShowtimes();
+        });
+
+        updateShowtimes();
+      }
+
+      function updateShowtimes() {
+        $(".time-content").empty();
+
+        selectedMovies.forEach((movie) => {
+          createMovieShowtimes(movie);
+        });
+
+        $(document).on("click", ".time-slot", function () {
+          $(".time-slot").removeClass("selected");
+          $(this).addClass("selected");
+
+          selectedTimeSlot = $(this).data("time");
+          console.log("선택된 시간:", selectedTimeSlot);
+        });
+      }
+
+      function createMovieShowtimes(movie) {
+        let gradeColor = "lightgray";
+        let gradeText = "전체";
+        const age = parseInt(movie.grade);
+
+        if (age == 12) {
+          gradeColor = "yellowgreen";
+          gradeText = "12";
+        } else if (age == 15) {
+          gradeColor = "orange";
+          gradeText = "15";
+        } else if (age == 19) {
+          gradeColor = "red";
+          gradeText = "19";
+        }
+
+        const movieSection = $(
+          '<div style="margin-bottom: 20px;">' +
+            '<div style="display: flex; align-items: center; margin-bottom: 10px;">' +
+            '<div style="width: 24px; height: 24px; border-radius: 4px; color: white; font-size: 12px; display: flex; align-items: center; justify-content: center; margin-right: 10px; background-color: ' +
+            gradeColor +
+            ';">' +
+            gradeText +
+            "</div>" +
+            "<div>" +
+            movie.name +
+            "</div>" +
+            "</div>" +
+            '<div class="time-slots"></div>' +
+            "</div>"
+        );
+
+        $(".time-content").append(movieSection);
+
+        const timeSlots = movieSection.find(".time-slots");
+        const numSlots = 4 + Math.floor(Math.random() * 3);
+
+        const hours = [10, 12, 14, 16, 18, 20];
+
+        for (let i = 0; i < numSlots; i++) {
+          const hour = hours[i % hours.length];
+          const minutes = [0, 20, 40][Math.floor(Math.random() * 3)];
+          const startTime = `${hour}:${minutes.toString().padStart(2, "0")}`;
+
+          const remainingSeats = 10 + Math.floor(Math.random() * 140);
+
+          const timeSlot = $(
+            '<div class="time-slot" data-time="' +
+              startTime +
+              '">' +
+              '<div class="start-time">' +
+              startTime +
+              "</div>" +
+              '<div class="seats">' +
+              remainingSeats +
+              "석</div>" +
+              "</div>"
+          );
+
+          timeSlots.append(timeSlot);
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+.boxoffice-container {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+h3 {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.searchBar-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
