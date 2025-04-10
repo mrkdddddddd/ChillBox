@@ -1,0 +1,16 @@
+.container {
+  margin: 24px auto;
+  width: 1000px;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+/* div {
+  height: 800px;
+  background-image: url("/common/images/advn.png");
+  object-fit: cover;
+
+  background-position: center;
+  background-repeat: no-repeat;
+} 
+*/

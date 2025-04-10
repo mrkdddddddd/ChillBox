@@ -1,0 +1,60 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f8f8fa;
+  margin-top: 40px;
+}
+
+.fmenu {
+  display: flex;
+  list-style: none;
+  column-gap: 16px;
+}
+
+.fmenu a {
+  text-decoration: none;
+  color: #503396;
+  font-size: 12px;
+}
+
+.fBottom {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+.fInfo{
+ font-size: 12px; 
+ color: #000000"
+} 
+.logo{
+width: 120px;
+}
+.logo img{
+ width: 100px;
+ opacity: 0.4;
+
+}
+
+.sns {
+width: 150px;
+font-size: 20px;
+color: gray;
+display: flex;
+text-align: center;
+align-items: center;
+justify-content: center;
+
+
+}
+
+.sns a{
+    text-decoration: none;
+}
+.sns i {
+    margin: 4px;
+    cursor: pointer;
+    color: #503396;
+    opacity: 0.4;
+
+}
