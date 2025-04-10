@@ -4,15 +4,16 @@ body {
     flex-direction: column;
 }
 .nav {
-    width: 100vw;
-    height: 120px;
-    border-bottom: 1px solid gray;
-    background-color: #503396;
-    color: #ffffff;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 32px;
+  width: 100vw;
+  height: 80px;
+  border-bottom: 1px solid gray;
+  background-color: #503396;
+  border-bottom: 1px solid gray;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; 
+  font-size: 32px; 
 }
 .navdiv {
     display: flex;
@@ -22,6 +23,8 @@ body {
 }
 .logo {
     flex-grow: 1;
+  width: 140px;
+  height: 75px;
 }
 .container {
     width: 1000px;
@@ -36,18 +39,20 @@ body {
     height: 120px;
 }
 
-.nav img.hambug-icon,
-.nav img.user-icon {
-    width: 56px;
-    height: 56px;
-    color: #ffffff;
-    -webkit-filter: invert(1);
+.hamburger {
+  filter: invert(100%);
+  width: 32px;  
+  height: auto;    
+  margin-left: 10px;
 }
-div.logo-div {
-    width: 160px;
-    height: 100px;
-    background-color: white;
+
+.person {
+  filter: invert(100%);
+  width: 32px;
+  height: auto;    
+  margin-top: 10px;
 }
+
 /* font-size
 navSize-32px
 tabSize-24px
