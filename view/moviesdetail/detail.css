@@ -1,0 +1,211 @@
+/* 기본 스타일 초기화 */
+.nav {
+  width: 100vw;
+  height: 80px;
+  border-bottom: 1px solid gray;
+  background-color: #503396;  
+  color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 24px;
+  margin-top: 0%;
+}
+.navdiv {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  justify-content: space-evenly;
+}
+.logo {
+  flex-grow: 1;
+  width: 140px;
+  height: 75px;  
+}
+
+.hamburger {
+  filter: invert(100%);
+  width: 32px;
+  height: auto;
+  margin-left: 10px;
+}
+
+.person {
+  filter: invert(100%);
+  width: 32px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* 상단 영화 정보 */
+.movie-header {    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+}
+.movie-info {
+  width: 30%;
+  margin-right: 30%;  
+  margin-top: 0%;
+}
+
+.movie-info h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.movie-info h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.movie-stats span {
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.movie-poster {      
+  width: 10%; 
+  margin-top: 0px;
+  text-align: center;
+  margin-left: 23%;    
+}
+
+.poster {
+  width: 100%;
+  height: 200px;
+  background-color: #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 auto;  
+}
+
+.reserve-button {
+  width: 150px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #503396;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reserve-button:hover {
+  background-color: #402a7a;
+}
+
+/* 탭 메뉴 */
+.tabs {
+  width: 53%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  padding-left: 0px;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #f5f5f5;
+  border: none;
+  cursor: pointer;
+}
+
+.reserve-button {
+  width: 100%;
+}
+
+.tab-button.active {  
+  background-color: #503396;
+  color: #fff;
+  border-bottom: 2px solid #503396;
+}
+
+.tab-button:hover {
+  background-color: #ddd;
+}
+
+/* 주요 정보 */
+.main-info {
+  width: 50%;
+  padding: 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  margin: 20px auto;
+}
+
+.main-info p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.movie-details p {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/* 차트 섹션 */
+.chart-section {
+  width: 50%;
+  padding: 20px;
+  background-color: #e0e0e0;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin: 20px auto;
+}
+
+/* 댓글 섹션 */
+.comments-section {
+  padding: 20px;
+  background-color: #fff;
+  width: 50%;
+  margin: 20px auto;  
+}
+
+.comments-section h3 {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.comment {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.comment p {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.comment strong {
+  font-weight: bold;
+}

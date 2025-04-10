@@ -1,0 +1,225 @@
+/* 네비게이션 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.nav {
+  width: 100vw;
+  height: 80px;
+  border-bottom: 1px solid gray;
+  background-color: #503396;  
+  color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 24px;
+  margin-top: 0%;
+}
+.navdiv {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  justify-content: space-evenly;
+}
+.logo {
+  flex-grow: 1;
+  width: 140px;
+  height: 75px;  
+}
+
+.hamburger {
+  filter: invert(100%);
+  width: 32px;
+  height: auto;
+  margin-left: 10px;
+}
+
+.person {
+  filter: invert(100%);
+  width: 32px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+
+.movie-header p{
+  width: 50%;
+  padding: 20px;
+  font-size: 32px;
+  margin-left: 19%;
+  margin-top: 3%;
+  
+}
+
+/* 탭 메뉴 스타일 */
+.tabs {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 3% 90px;  
+  margin-left: 20%;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.tab-button.active {
+  background-color: #503396;
+  color: #ffffff;
+  border: none;
+}
+
+/* 검색창 스타일 */
+.search-bar {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;  
+  margin: 0 30% 20px auto;  
+}
+
+.search-input {
+  width: 150px;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.search-button {
+  padding: 8px 16px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  background-color: #503396;
+  color: #ffffff;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #402a7a;
+}
+
+/* 탭 컨텐츠 스타일 */
+
+.tab-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.movie-list {
+  width: 50%;
+  display: flex; /* Flexbox로 변경 */
+  flex-wrap: wrap; /* 화면 크기에 따라 줄바꿈 */
+  gap: 20px; /* 카드 간 간격 */
+  justify-content: center; /* 중앙 정렬 */  
+  margin-top: 5%;
+  margin-left: 1%;
+}
+
+.movie-card {
+  width: 150px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #f5f5f5;    
+  text-align: left;
+}
+
+.poster {
+  width: 100%; /* 부모 요소 너비에 맞춤 */
+  height: auto; /* 높이를 자동으로 설정 */
+  display: flex;
+  justify-content: center; /* 이미지 중앙 정렬 */
+  align-items: center; /* 이미지 세로 중앙 정렬 */
+  background-color: #ccc; /* 배경색 */
+  border-radius: 5px; /* 모서리 둥글게 */
+  overflow: hidden;
+}
+
+.poster img {
+  width: 100%; /* 부모 요소 너비에 맞춤 */
+  height: auto; /* 비율 유지 */
+  object-fit: cover; /* 이미지가 부모 요소에 맞게 잘림 */
+  display: block;
+}
+
+.details p {
+  margin: 5px 0; /* 텍스트 간 간격 */
+  font-size: 14px; /* 텍스트 크기 */
+  color: #333; /* 텍스트 색상 */
+}
+
+.info {    
+  width: 200px; /* 카드 너비 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+  background-color: #f9f9f9; /* 배경색 */    
+  padding: 15px;  
+  transition: transform 0.2s ease;  
+}
+
+.details {
+  text-align: center;
+}
+
+.details p {
+  margin: 5px 0;
+}
+
+.inline-details {
+  display: flex;
+  justify-content: space-between; /* 요소 간 간격을 균등하게 배치 */
+  gap: 10px; /* 요소 간 간격 */
+}
+
+.inline-details p {
+  margin: 0; /* 기본 여백 제거 */
+  font-size: 14px; /* 텍스트 크기 설정 */
+}
+
+.info button {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #503396;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 5%;
+}
+
+.movie-button:hover {
+  background-color: #402a7a;
+}
+
+/* 더보기 버튼 스타일 */
+.load-more {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.load-more-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.load-more-button:hover {
+  background-color: #ddd;
+}
+
