@@ -111,6 +111,418 @@
         "https://img.megabox.co.kr/SharedImg/2025/03/27/O6RnDMOAnUw6geDdlaAXRlkqgy0mSSDb_420.jpg",
         "https://img.megabox.co.kr/SharedImg/2025/03/26/PRvXQZUW0EK3CmCunB7f6pwxUKTlwOKS_380.jpg"
       ]
+    },
+    {
+      "name": "아마추어",
+      "engName": "Amateur",
+      "good": "452",
+      "backgroundImg": "https://img.megabox.co.kr/SharedImg/2025/03/15/FgD7cZ9rQwT5XL8yJKpvB1A4JCKsFn3L_570.jpg",
+      "imgSrc": "/common/poster/amateur.webp",
+      "infoTitle": "NBA 스카우터의 눈에 띈 14세 농구 신동",
+      "info": "14세 농구 신동 테런스는 NBA 스카우터의 눈에 띄어 소셜 미디어 스타가 된다. 그는 명문 고등학교로 스카우트되며 꿈의 무대에 한발짝 다가서지만, 화려한 스포트라이트 뒤에 감춰진 비밀스러운 청소년 스포츠계의 현실과 마주하게 된다. 자신을 둘러싼 주변인들의 욕망과 이해관계 속에서 테런스는 진정한 자신의 길을 찾기 위한 여정을 시작한다.",
+      "type": ["2D"],
+      "genre": "드라마",
+      "runTime": "118",
+      "grade": "15세이상관람가",
+      "date": "2025.03.22",
+      "supervision": "라이언 플렉",
+      "actor": [
+        "마이클 레인리 주니어",
+        "잭 해리어",
+        "브라이언 화이트",
+        "노스 라자",
+        "우삼카 오크포르"
+      ],
+      "rate": "9.7%",
+      "galleryNum": "874,523",
+      "review": [
+        {
+          "id": "basket345",
+          "score": "9",
+          "genre": "스토리",
+          "reviewInfo": "농구 좋아하는 사람이라면 무조건 봐야할 영화"
+        },
+        {
+          "id": "movie_lover",
+          "score": "10",
+          "genre": "연출",
+          "reviewInfo": "현실적인 농구계 이야기... 감동과 교훈이 있네요"
+        },
+        {
+          "id": "kimminho22",
+          "score": "8",
+          "genre": "배우",
+          "reviewInfo": "주인공 연기력이 대단해요. 특히 농구 장면들이 정말 리얼함"
+        }
+      ],
+      "mainPreview": [
+        {
+          "control-poster": "https://img.megabox.co.kr/SharedImg/2025/03/15/wRQsT7fyPv3K8LxDm9hj2WqG4bFcHeYp_1100.jpg",
+          "src": "https://s3550.smartucc.kr/encodeFile/3550/2025/03/15/b459a1c33d7f8b9e2c5a1d6f40e7c8b9_W.mp4"
+        }
+      ],
+      "thumbs": [
+        "https://img.megabox.co.kr/SharedImg/2025/03/15/rkMp2JvT1D8yOQzLHwF5WsMbqZVLW6gj_420.jpg",
+        "https://img.megabox.co.kr/SharedImg/2025/03/15/FgD7cZ9rQwT5XL8yJKpvB1A4JCKsFn3L_380.jpg",
+        "https://img.megabox.co.kr/SharedImg/2025/03/15/xKr4TpZ9svWnH2L7Bj8gD6wY1maSfJcQ_380.jpg"
+      ]
+    },
+    {
+      "name": "배러맨",
+      "engName": "The Gunslinger",
+      "good": "389",
+      "backgroundImg": "https://img.megabox.co.kr/SharedImg/2025/02/28/pTk7dVsZ3nRxJqLf2BGm1Y4HwaoQP9cS_570.jpg",
+      "imgSrc": "https://img.megabox.co.kr/SharedImg/2025/02/28/cMgR6vJhTbwX7kYKnF1DpZ3Lq9seWxNa_420.jpg",
+      "infoTitle": "그는 총을 든 채로 태어났다",
+      "info": "19세기 미국 서부, 가족을 잃고 복수의 길을 택한 사나이 '콜트'는 전설적인 총잡이로 명성을 얻게 된다. 어느 날 작은 마을에 도착한 그는 마을을 장악한 악명 높은 갱단과 맞서게 되고, 오랫동안 묻어두었던 과거의 상처와 마주하게 된다. 황량한 사막과 먼지투성이 마을에서 펼쳐지는 숨막히는 결투와 배신, 그리고 구원의 이야기.",
+      "type": ["2D", "IMAX"],
+      "genre": "서부/액션",
+      "runTime": "132",
+      "grade": "15세이상관람가",
+      "date": "2025.03.05",
+      "supervision": "앤서니 브라이언스",
+      "actor": [
+        "크리스찬 베일",
+        "펠리시티 존스",
+        "샘 엘리엇",
+        "매디슨 베일리",
+        "제프리 딘 모건"
+      ],
+      "rate": "8.3%",
+      "galleryNum": "753,142",
+      "review": [
+        {
+          "id": "western_fan",
+          "score": "10",
+          "genre": "연출",
+          "reviewInfo": "현대적 감각으로 재해석한 웨스턴의 정석"
+        },
+        {
+          "id": "movielover99",
+          "score": "9",
+          "genre": "영상미",
+          "reviewInfo": "황량한 사막 풍경과 총격신의 연출이 압권"
+        },
+        {
+          "id": "silver_bullet",
+          "score": "10",
+          "genre": "배우",
+          "reviewInfo": "크리스찬 베일의 연기가 영화를 완벽하게 이끌어갑니다"
+        }
+      ],
+      "mainPreview": [
+        {
+          "control-poster": "https://img.megabox.co.kr/SharedImg/2025/02/28/8dT2jKmVhG5pWr7nXzP3BcQ9fLsYx6a1_1100.jpg",
+          "src": "https://s3550.smartucc.kr/encodeFile/3550/2025/02/28/f7a9c1b2d3e4f5g6h7i8j9k0l1m2n3o4_W.mp4"
+        }
+      ],
+      "thumbs": [
+        "https://img.megabox.co.kr/SharedImg/2025/02/28/cMgR6vJhTbwX7kYKnF1DpZ3Lq9seWxNa_420.jpg",
+        "https://img.megabox.co.kr/SharedImg/2025/02/28/pTk7dVsZ3nRxJqLf2BGm1Y4HwaoQP9cS_380.jpg",
+        "https://img.megabox.co.kr/SharedImg/2025/02/28/vN8pTqJfK2yHmZ7gR3wX9cD5sLbQaW1e_380.jpg"
+      ]
+    },
+    {
+      "name": "야당",
+      "engName": "The Final Game",
+      "good": "325",
+      "backgroundImg": "/common/poster/yadang.webp",
+      "imgSrc": "/common/poster/yadang.webp",
+      "infoTitle": "인생을 건 마지막 경기",
+      "info": "은퇴를 앞둔 야구 선수 '강호'는 자신의 마지막 시즌에서 팀을 우승으로 이끌겠다는 강한 의지를 품고 있다. 하지만 갑자기 찾아온 부상과 젊은 유망주와의 경쟁, 그리고 오랜 라이벌 팀과의 피할 수 없는 대결이 그의 앞을 가로막는다. 야구장의 땀과 열정, 좌절과 희망, 그리고 동료애가 어우러진 감동 스포츠 드라마.",
+      "type": ["2D"],
+      "genre": "드라마/스포츠",
+      "runTime": "127",
+      "grade": "19세이상관람가",
+      "date": "2025.03.19",
+      "supervision": "김성윤",
+      "actor": ["황정민", "유연석", "오달수", "이성민", "박소담", "정우성"],
+      "rate": "7.8%",
+      "galleryNum": "682,471",
+      "review": [
+        {
+          "id": "baseball123",
+          "score": "10",
+          "genre": "스토리",
+          "reviewInfo": "야구 모르는 사람도 충분히 감동받을 수 있는 영화"
+        },
+        {
+          "id": "filmcritique",
+          "score": "9",
+          "genre": "음악",
+          "reviewInfo": "마지막 경기 장면에서 흐르는 음악이 정말 감동적이었어요"
+        },
+        {
+          "id": "movieman77",
+          "score": "8",
+          "genre": "연출",
+          "reviewInfo": "경기 장면 연출이 실제 중계를 보는 것 같았습니다"
+        }
+      ],
+      "mainPreview": [
+        {
+          "control-poster": "https://img.megabox.co.kr/SharedImg/2025/03/10/kP3fRvT7qN8mB2jW5cZ9xL1sD6gH4yV_1100.jpg",
+          "src": "https://s3550.smartucc.kr/encodeFile/3550/2025/03/10/a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p_W.mp4"
+        }
+      ],
+      "thumbs": [
+        "https://img.megabox.co.kr/SharedImg/2025/03/10/tFb7xRj2ZcV8mDpN3qGhK4wL5sWyP9vT_420.jpg",
+        "https://img.megabox.co.kr/SharedImg/2025/03/10/hJw2dLsKpP7nT8vBmN4gRzX9qFcWyV3a_380.jpg",
+        "https://img.megabox.co.kr/SharedImg/2025/03/10/pT8rVkJb3nF2qL7wZ9cX4mD5sG6hY1a_380.jpg"
+      ]
+    },
+    {
+      "name": "로비",
+      "engName": "Shadow Murder",
+      "good": "298",
+      "backgroundImg": "https://img.megabox.co.kr/SharedImg/2025/02/15/bZ7pR2kW9vT4sG8fN3qJ6mD5xL1cH7y_570.jpg",
+      "imgSrc": "https://img.megabox.co.kr/SharedImg/2025/02/15/kT7pH2nR8fW6bV4gS3mJ9qD1xL5cZ7v_420.jpg",
+      "infoTitle": "그는 범인을 쫓는가, 그림자를 쫓는가",
+      "info": "일련의 의문의 살인 사건을 수사하던 형사 '정우'는 모든 사건 현장에서 같은 패턴을 발견한다. 피해자들은 모두 과거 큰 사건에 연루되었지만 처벌을 받지 않은 인물들. 그리고 현장에는 항상 '정의'를 의미하는 특별한 표식이 남겨진다. 복수자의 정체를 추적하던 정우는 자신의 과거와도 연결된 충격적인 진실에 다가가게 된다. 복수와 정의, 그리고 용서에 대한 미스터리 스릴러.",
+      "type": ["2D"],
+      "genre": "범죄/스릴러",
+      "runTime": "118",
+      "grade": "15세이상관람가",
+      "date": "2025.03.12",
+      "supervision": "최진우",
+      "actor": ["설경구", "전도연", "조진웅", "이제훈", "김향기", "진선규"],
+      "rate": "6.9%",
+      "galleryNum": "594,328",
+      "review": [
+        {
+          "id": "mysteryfan",
+          "score": "9",
+          "genre": "스토리",
+          "reviewInfo": "반전에 반전을 거듭하는 스토리 전개가 일품"
+        },
+        {
+          "id": "cinephile88",
+          "score": "10",
+          "genre": "연출",
+          "reviewInfo": "어두운 분위기와 긴장감 있는 연출이 돋보이는 작품"
+        },
+        {
+          "id": "filmreview",
+          "score": "8",
+          "genre": "배우",
+          "reviewInfo": "설경구의 무게감 있는 연기가 영화의 중심을 잡아줍니다"
+        }
+      ],
+      "mainPreview": [
+        {
+          "control-poster": "https://img.megabox.co.kr/SharedImg/2025/02/15/jN8pT3qR2kW7vF5bG6mH9cX4sZ1dL_1100.jpg",
+          "src": "https://s3550.smartucc.kr/encodeFile/3550/2025/02/15/z9y8x7w6v5u4t3s2r1q0p9o8n7m6l5_W.mp4"
+        }
+      ],
+      "thumbs": [
+        "https://img.megabox.co.kr/SharedImg/2025/02/15/kT7pH2nR8fW6bV4gS3mJ9qD1xL5cZ7v_420.jpg",
+        "https://img.megabox.co.kr/SharedImg/2025/02/15/bZ7pR2kW9vT4sG8fN3qJ6mD5xL1cH7y_380.jpg",
+        "https://img.megabox.co.kr/SharedImg/2025/02/15/vT8pR3nK7bW6fV2gZ9mJ4qD1xL5cH7s_380.jpg"
+      ]
+    },
+    {
+      "name": "그린 라이트",
+      "engName": "Green Light",
+      "good": "267",
+      "backgroundImg": "https://img.megabox.co.kr/SharedImg/2025/03/18/gN7pT3qR8bW2vF5mJ9cX6kD1sL4hZ_570.jpg",
+      "imgSrc": "https://img.megabox.co.kr/SharedImg/2025/03/18/tR7pN3qB8fW6vG2mJ9cX4kD1sL5hZ_420.jpg",
+      "infoTitle": "목숨을 걸고 달려야 하는 단 하루",
+      "info": "전직 레이싱 선수 '민호'는 오토바이 배달부로 일하며 평범한 나날을 보내고 있다. 어느 날 그에게 거액의 제안이 들어온다. 단 하루, 도시 전역에 특급 소포를 배달하는 미션. 하지만 첫 배달을 마친 후 소포 속 위험한 비밀을 알게 되고, 마피아와 경찰 모두에게 쫓기는 신세가 된다. 도시의 모든 신호등이 그에게 녹색 불을 밝히는 순간, 숨막히는 질주가 시작된다. 속도, 위험, 그리고 선택에 관한 액션 스릴러.",
+      "type": ["2D", "4DX"],
+      "genre": "액션/스릴러",
+      "runTime": "109",
+      "grade": "15세이상관람가",
+      "date": "2025.03.21",
+      "supervision": "이상용",
+      "actor": ["이제훈", "정해인", "박정민", "전여빈", "마동석", "김성균"],
+      "rate": "5.8%",
+      "galleryNum": "521,963",
+      "review": [
+        {
+          "id": "speedlover",
+          "score": "10",
+          "genre": "액션",
+          "reviewInfo": "오토바이 추격신이 정말 압권입니다"
+        },
+        {
+          "id": "filmcritic22",
+          "score": "9",
+          "genre": "음향",
+          "reviewInfo": "엔진 소리와 음악이 어우러진 사운드가 긴장감을 더해요"
+        },
+        {
+          "id": "actionmovie",
+          "score": "8",
+          "genre": "연출",
+          "reviewInfo": "시원시원한 액션과 적절한 유머의 조화가 좋았습니다"
+        }
+      ],
+      "mainPreview": [
+        {
+          "control-poster": "https://img.megabox.co.kr/SharedImg/2025/03/18/zC3vX7nM1bK9pQ4jR6tW8sG2hF5dL_1100.jpg",
+          "src": "https://s3550.smartucc.kr/encodeFile/3550/2025/03/18/q1w2e3r4t5y6u7i8o9p0a1s2d3f4g5_W.mp4"
+        }
+      ],
+      "thumbs": [
+        "https://img.megabox.co.kr/SharedImg/2025/03/18/tR7pN3qB8fW6vG2mJ9cX4kD1sL5hZ_420.jpg",
+        "https://img.megabox.co.kr/SharedImg/2025/03/18/gN7pT3qR8bW2vF5mJ9cX6kD1sL4hZ_380.jpg",
+        "https://img.megabox.co.kr/SharedImg/2025/03/18/vT7pK3qJ8fC6bN2mL9cX4sD1gH5zR_380.jpg"
+      ]
+    },
+    {
+      "name": "숨겨진 기억",
+      "engName": "Hidden Memories",
+      "good": "243",
+      "backgroundImg": "https://img.megabox.co.kr/SharedImg/2025/03/05/jP8qT3rK7vW9bN4mL6cX2sD1gH5fZ_570.jpg",
+      "imgSrc": "https://img.megabox.co.kr/SharedImg/2025/03/05/pK7jT3rN8vW6bM2cX9qL4sD1gH5fZ_420.jpg",
+      "infoTitle": "과거의 기억, 현재의 진실",
+      "info": "교통사고 후 기억을 잃은 '연수'는 자신의 삶을 하나씩 되찾아가는 과정에서 이상한 점을 발견한다. 남편과 가족들이 말하는 그녀의 과거가 실제 기억의 파편들과 맞지 않는 것. 점점 더 혼란스러워지는 가운데, 연수는 자신을 돕겠다는 한 남자를 만나게 되고, 함께 진실을 찾아가는 여정을 시작한다. 하지만 그 진실은 그녀가 상상했던 것보다 훨씬 충격적이고 위험한 것이었다. 기억과 정체성, 그리고 가족에 관한 미스터리 스릴러.",
+      "type": ["2D"],
+      "genre": "미스터리/스릴러",
+      "runTime": "112",
+      "grade": "15세이상관람가",
+      "date": "2025.03.14",
+      "supervision": "박찬욱",
+      "actor": ["김혜수", "공유", "배두나", "이병헌", "한소희", "김혜윤"],
+      "rate": "4.9%",
+      "galleryNum": "487,254",
+      "review": [
+        {
+          "id": "mystery_fan",
+          "score": "10",
+          "genre": "연출",
+          "reviewInfo": "박찬욱 감독의 섬세한 연출이 돋보이는 작품"
+        },
+        {
+          "id": "moviebuff44",
+          "score": "9",
+          "genre": "스토리",
+          "reviewInfo": "미스터리 전개가 정말 탁월합니다. 마지막 반전 최고!"
+        },
+        {
+          "id": "filmcritic66",
+          "score": "10",
+          "genre": "영상미",
+          "reviewInfo": "컬러와 구도 활용이 예술적인 영화"
+        }
+      ],
+      "mainPreview": [
+        {
+          "control-poster": "https://img.megabox.co.kr/SharedImg/2025/03/05/rT9jP4kM7vW2bN3cX8qL6sD1gH5fZ_1100.jpg",
+          "src": "https://s3550.smartucc.kr/encodeFile/3550/2025/03/05/h1j2k3l4z5x6c7v8b9n0m1q2w3e4r5_W.mp4"
+        }
+      ],
+      "thumbs": [
+        "https://img.megabox.co.kr/SharedImg/2025/03/05/pK7jT3rN8vW6bM2cX9qL4sD1gH5fZ_420.jpg",
+        "https://img.megabox.co.kr/SharedImg/2025/03/05/jP8qT3rK7vW9bN4mL6cX2sD1gH5fZ_380.jpg",
+        "https://img.megabox.co.kr/SharedImg/2025/03/05/kR7pT3jV8vW6bN2mL9cX4sD1gH5fZ_380.jpg"
+      ]
+    },
+    {
+      "name": "데스티니",
+      "engName": "Destiny",
+      "good": "219",
+      "backgroundImg": "https://img.megabox.co.kr/SharedImg/2025/03/22/tK7pJ3vN8fW6bM2cX9qL4sD1gH5fZ_570.jpg",
+      "imgSrc": "https://img.megabox.co.kr/SharedImg/2025/03/22/pK7jR3tN8vW6bM2cX9qL4sD1gH5fZ_420.jpg",
+      "infoTitle": "운명의 끈으로 묶인 두 사람",
+      "info": "어린 시절 헤어진 쌍둥이 형제 '준호'와 '민호'. 한 명은 국제적인 첼리스트로, 다른 한 명은 강력계 형사로 전혀 다른 삶을 살아가고 있다. 우연한 기회에 서로의 존재를 알게 된 두 사람은 점점 서로의 삶에 깊숙이 관여하게 된다. 형사인 민호는 준호가 연루된 국제적 음악 사기 사건을 조사하게 되고, 준호는 민호의 오래된 연인과 재회하게 된다. 혈연과 운명, 선택과 책임에 관한 드라마틱한 이야기가 펼쳐진다.",
+      "type": ["2D"],
+      "genre": "드라마",
+      "runTime": "124",
+      "grade": "12세이상관람가",
+      "date": "2025.03.08",
+      "supervision": "이창동",
+      "actor": ["황정민", "하정우", "손예진", "전도연", "안성기", "김희애"],
+      "rate": "3.7%",
+      "galleryNum": "421,687",
+      "review": [
+        {
+          "id": "dramalover",
+          "score": "10",
+          "genre": "배우",
+          "reviewInfo": "황정민, 하정우의 1인 2역 연기가 정말 인상적"
+        },
+        {
+          "id": "cineast77",
+          "score": "9",
+          "genre": "음악",
+          "reviewInfo": "첼로 선율이 영화의 감정을 한층 더 높여줍니다"
+        },
+        {
+          "id": "movieguy55",
+          "score": "8",
+          "genre": "스토리",
+          "reviewInfo": "가족의 의미를 되새기게 하는 감동적인 스토리"
+        }
+      ],
+      "mainPreview": [
+        {
+          "control-poster": "https://img.megabox.co.kr/SharedImg/2025/03/22/hP7kT3jV8vW6bN2mL9cX4sD1gH5fZ_1100.jpg",
+          "src": "https://s3550.smartucc.kr/encodeFile/3550/2025/03/22/o1p2a3s4d5f6g7h8j9k0l1z2x3c4v_W.mp4"
+        }
+      ],
+      "thumbs": [
+        "https://img.megabox.co.kr/SharedImg/2025/03/22/pK7jR3tN8vW6bM2cX9qL4sD1gH5fZ_420.jpg",
+        "https://img.megabox.co.kr/SharedImg/2025/03/22/tK7pJ3vN8fW6bM2cX9qL4sD1gH5fZ_380.jpg",
+        "https://img.megabox.co.kr/SharedImg/2025/03/22/kR7pT3vB8fW6bN2mL9cX4sD1gH5fZ_380.jpg"
+      ]
+    },
+    {
+      "name": "블루 문",
+      "engName": "Blue Moon",
+      "good": "195",
+      "backgroundImg": "https://img.megabox.co.kr/SharedImg/2025/02/18/pN7kT3jV8vW6bM2cX9qL4sD1gH5fZ_570.jpg",
+      "imgSrc": "https://img.megabox.co.kr/SharedImg/2025/02/18/tK7pJ3vN8fW6bM2cX9qL4sD1gH5fZ_420.jpg",
+      "infoTitle": "달빛 아래 펼쳐지는 마법 같은 하룻밤",
+      "info": "해마다 단 한 번 뜨는 블루 문이 떠오르는 밤, 서로 다른 삶을 살아온 일곱 남녀가 우연히 한 산장에 모이게 된다. 폭설로 고립된 산장에서 그들은 각자의 비밀과 상처, 꿈과 희망을 나누며 하룻밤을 보내게 된다. 블루 문이 사라지기 전까지, 그들 사이에 벌어지는 예측할 수 없는 사건들과 감정의 변화가 펼쳐진다. 인생의 전환점에 선 사람들의 로맨틱 판타지 드라마.",
+      "type": ["2D"],
+      "genre": "로맨스/판타지",
+      "runTime": "116",
+      "grade": "12세이상관람가",
+      "date": "2025.03.01",
+      "supervision": "허진호",
+      "actor": [
+        "공유",
+        "정유미",
+        "박해일",
+        "김고은",
+        "류준열",
+        "최우식",
+        "아이유"
+      ],
+      "rate": "3.0%",
+      "galleryNum": "368,945",
+      "review": [
+        {
+          "id": "romanticmoon",
+          "score": "10",
+          "genre": "영상미",
+          "reviewInfo": "푸른 달빛의 영상미가 환상적인 작품"
+        },
+        {
+          "id": "fantasy_lover",
+          "score": "9",
+          "genre": "음악",
+          "reviewInfo": "아름다운 OST가 감정을 더 깊게 만들어줍니다"
+        },
+        {
+          "id": "cinephile_k",
+          "score": "8",
+          "genre": "연기",
+          "reviewInfo": "7명의 배우들이 완벽한 앙상블을 이루는 영화"
+        }
+      ],
+      "mainPreview": [
+        {
+          "control-poster": "https://img.megabox.co.kr/SharedImg/2025/02/18/kR7pT3jV8vW6bN2mL9cX4sD1gH5fZ_1100.jpg",
+          "src": "https://s3550.smartucc.kr/encodeFile/3550/2025/02/18/v1b2n3m4q5w6e7r8t9y1u2i3o4p5a_W.mp4"
+        }
+      ],
+      "thumbs": [
+        "https://img.megabox.co.kr/SharedImg/2025/02/18/tK7pJ3vN8fW6bM2cX9qL4sD1gH5fZ_420.jpg",
+        "https://img.megabox.co.kr/SharedImg/2025/02/18/pN7kT3jV8vW6bM2cX9qL4sD1gH5fZ_380.jpg",
+        "https://img.megabox.co.kr/SharedImg/2025/02/18/sK7pY3vL8fW6bN2mC9qX4tD1gH5fZ_380.jpg"
+      ]
     }
   ]
 }

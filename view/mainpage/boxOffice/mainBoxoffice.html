@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="/view/mainpage/searchBar/searchBar.html" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <h3 style="text-align: center">박스오피스</h3>
+    <p class="plus" style="text-align: end; padding-right: 48px">
+      <a href="" style="text-decoration: none">
+        더 많은 영화 보기
+        <i class="fa-solid fa-plus"></i>
+      </a>
+    </p>
+    <div class="boxoffice-container"></div>
+    <div class="searchBar-container"></div>
+
+    <script>
+      $(function () {
+        const movies = [
+          {
+            id: 1,
+            title: "영화 1",
+            rating: "7.9k",
+            posterImage: "../../../common/poster/attack.webp",
+          },
+          {
+            id: 2,
+            title: "영화 2",
+            rating: "8.2k",
+            posterImage: "../../../common/poster/match.webp",
+          },
+          {
+            id: 3,
+            title: "영화 3",
+            rating: "6.5k",
+            posterImage: "../../../common/poster/amateur.webp",
+          },
+          {
+            id: 4,
+            title: "영화 4",
+            rating: "9.1k",
+            posterImage: "../../../common/poster/last.webp",
+          },
+        ];
+
+        $.get(
+          "../../view/mainpage/boxOffice/poster/poster.html",
+          function (template) {
+            const cardTemplate = $(template).filter(".card").prop("outerHTML");
+
+            const cardsHTML = movies
+              .map((movie) => {
+                let card = cardTemplate;
+
+                const $card = $(card);
+                $card.find(".rank").text(movie.id);
+                $card.find("p").text(movie.rating);
+                $card
+                  .find(".poster")
+                  .css("background-image", `url(${movie.posterImage})`);
+
+                return $card.prop("outerHTML");
+              })
+              .join("");
+
+            $(".boxoffice-container").html(cardsHTML);
+            $(".boxoffice-container button").on("click", function () {
+              const movieId = $(this).data("movie-id");
+              window.location.href =
+                "../../view/booking/main_booking.html?movieId=" + movieId;
+            });
+          }
+        );
+        loadSearchBar();
+      });
+      function loadSearchBar() {
+        $.get("/view/mainpage/searchBar/searchBar.html", function (data) {
+          $(".searchBar-container").html(data);
+        });
+      }
+    </script>
+  </body>
+</html>
