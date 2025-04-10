@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies</title>
+  <link rel="stylesheet" href="movies.css">
+  <script src="../../control/jquery.js"></script>
+</head>
+<header>
+  <!-- 네비게이션 -->
+  <nav class="nav">    
+    <div class="navdiv1">
+      <img class="hamburger" src="../../common/images/hamburger.png" alt="hamburger" />
+      <p>영화</p>
+      <p>예매</p>
+      <p>극장</p>
+    </div>
+    
+    <div class="logo-div">
+      <img class="logo" src="../../common/images/logo.png" alt="logo" />
+    </div>
+    
+    <div class="navdiv2">
+      <p>이벤트</p>
+      <p>스토어</p>
+      <p>혜택</p>
+      <img class="person" src="../../common/images/person.png" alt="person" />
+    </div>
+  </nav>
+</header>
+
+<body>  
+  <div id="movieid" class="movie-header">
+    <p><strong>전체영화</strong></p>
+  </div>
+  
+   <!-- 탭 메뉴 -->
+   <div class="tabs">
+    <button class="tab-button active" data-tab="boxoffice">박스오피스</button>
+    <button class="tab-button" data-tab="upcoming">상영예정작</button>
+  </div>
+
+  <!-- 검색창 -->
+  <div class="search-bar">
+    <input type="text" class="search-input" placeholder="영화명 검색" />
+    <button class="search-button">검색</button>
+  </div>
+ 
+
+
+  <!-- 탭 컨텐츠 -->
+  <div class="tab-content">
+    <section id="boxoffice" class="tab-panel active">
+      <div class="movie-list">       
+          <div class="info">                                                                  
+            <div class="poster">
+              <img src=""><br>
+                <div class="overlay">
+                  <p>진격의 거인 완결편</p>
+                  <p>개봉일: 2025년 4월 13일</p>
+                  <p>예매율: 35%</p>
+                </div>
+            </div>
+            <div class="details">
+              <p></p>
+              <p></p>
+              <p></p>                
+            </div>            
+            <button>예매</button>                                                
+          </div>   
+                        
+      </div>
+    </section>
+  </div>
+ 
+  <script type="text/javascript" src="../../control/movies.js"></script>
+</body>
+</html>
