@@ -5,12 +5,15 @@ body {
 }
 .nav {
   width: 100vw;
-  height: 120px;
+  height: 80px;
   border-bottom: 1px solid gray;
   background-color: #503396;
+  border-bottom: 1px solid gray;
   color: #ffffff;
   display: flex;
   justify-content: space-evenly;
+  align-items: center; 
+  font-size: 32px; 
 }
 .navdiv {
   display: flex;
@@ -19,7 +22,9 @@ body {
   justify-content: space-evenly;
 }
 .logo {
-  flex-grow: 1;
+  width: 140px;
+  height: 75px;
+  flex-grow: 0;
 }
 .container {
   width: 1000px;
@@ -33,6 +38,21 @@ body {
   width: 100vw;
   height: 120px;
 }
+
+.hamburger {
+  filter: invert(100%);
+  width: 32px;  
+  height: auto;    
+  margin-left: 10px;
+}
+
+.person {
+  filter: invert(100%);
+  width: 32px;
+  height: auto;    
+  margin-top: 10px;
+}
+
 
 /* font-size
 navSize-32px
