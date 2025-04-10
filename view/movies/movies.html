@@ -9,24 +9,22 @@
 </head>
 <header>
   <!-- 네비게이션 -->
-  <nav class="nav">
-    <div>
+  <nav class="nav">    
+    <div class="navdiv1">
       <img class="hamburger" src="../../common/images/hamburger.png" alt="hamburger" />
-    </div>
-    <div class="navdiv">
       <p>영화</p>
       <p>예매</p>
       <p>극장</p>
     </div>
+    
     <div class="logo-div">
       <img class="logo" src="../../common/images/logo.png" alt="logo" />
     </div>
-    <div class="navdiv">
+    
+    <div class="navdiv2">
       <p>이벤트</p>
       <p>스토어</p>
       <p>혜택</p>
-    </div>
-    <div>
       <img class="person" src="../../common/images/person.png" alt="person" />
     </div>
   </nav>
@@ -48,6 +46,8 @@
     <input type="text" class="search-input" placeholder="영화명 검색" />
     <button class="search-button">검색</button>
   </div>
+ 
+
 
   <!-- 탭 컨텐츠 -->
   <div class="tab-content">
@@ -56,6 +56,11 @@
           <div class="info">                                                                  
             <div class="poster">
               <img src=""><br>
+                <div class="overlay">
+                  <p>진격의 거인 완결편</p>
+                  <p>개봉일: 2025년 4월 13일</p>
+                  <p>예매율: 35%</p>
+                </div>
             </div>
             <div class="details">
               <p></p>
@@ -69,11 +74,6 @@
     </section>
   </div>
  
-
-  <!-- 더보기 버튼 -->
-  <div class="load-more">
-    <button class="load-more-button">더보기</button>
-  </div>
   <script type="text/javascript" src="../../control/movies.js"></script>
 </body>
 </html>

@@ -9,7 +9,7 @@ body {
 }
 
 .nav {
-  width: 100vw;
+  width: 100%;
   height: 80px;
   border-bottom: 1px solid gray;
   background-color: #503396;  
@@ -20,50 +20,61 @@ body {
   font-size: 24px;
   margin-top: 0%;
 }
-.navdiv {
+.navdiv1 {
   display: flex;
   flex-direction: row;
-  width: 400px;
+  width: 24%;
+  margin-left: 18%;
   justify-content: space-evenly;
 }
+
+.navdiv2 {
+  display: flex;
+  flex-direction: row;
+  width: 24%;
+  margin-right: 20%;
+  justify-content: space-evenly;
+}
+
 .logo {
   flex-grow: 1;
   width: 140px;
-  height: 75px;  
+  height: 86px;  
 }
 
 .hamburger {
   filter: invert(100%);
   width: 32px;
   height: auto;
-  margin-left: 10px;
+  margin-left: 0%;
 }
 
 .person {
   filter: invert(100%);
   width: 32px;
   height: auto;
-  margin-top: 10px;
-  margin-right: 15px;
+  margin-top: 0%;
+  margin-right: 0%;
 }
 
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
 
 .movie-header p{
-  width: 50%;
+  width: 52%;
   padding: 20px;
-  font-size: 32px;
-  margin-left: 19%;
-  margin-top: 3%;
-  
+  font-size: 26px;
+  margin: 2% auto; 
 }
 
 /* 탭 메뉴 스타일 */
 .tabs {
-  width: 50%;
+  width: 52%;
   display: flex;
   justify-content: flex-start;
-  margin: 3% 90px;  
-  margin-left: 20%;
+  margin: 20px auto;  
   border-bottom: 1px solid #ccc;
 }
 
@@ -83,11 +94,11 @@ body {
 
 /* 검색창 스타일 */
 .search-bar {
-  width: 50%;
+  width: 52%;
   display: flex;
   justify-content: flex-end;
   align-items: center;  
-  margin: 0 30% 20px auto;  
+  margin: 2% auto;  
 }
 
 .search-input {
@@ -115,18 +126,21 @@ body {
 /* 탭 컨텐츠 스타일 */
 
 .tab-content {
-  width: 80%;
+  width: 52%;
   margin: 0 auto;
 }
 
+.tab-panel .active {
+  width: 100%;
+}
+
 .movie-list {
-  width: 50%;
+  width: 100%;
   display: flex; /* Flexbox로 변경 */
   flex-wrap: wrap; /* 화면 크기에 따라 줄바꿈 */
   gap: 20px; /* 카드 간 간격 */
   justify-content: center; /* 중앙 정렬 */  
-  margin-top: 5%;
-  margin-left: 1%;
+  margin: 5% auto auto auto;
 }
 
 .movie-card {
@@ -164,11 +178,13 @@ body {
 }
 
 .info {    
-  width: 200px; /* 카드 너비 */
+  width: 20%; /* 카드 너비 */
   text-align: center; /* 텍스트 중앙 정렬 */
   background-color: #f9f9f9; /* 배경색 */    
-  padding: 15px;  
+  padding: 5%;
   transition: transform 0.2s ease;  
+  position: relative;
+  left: -24%; 
 }
 
 .details {
@@ -176,7 +192,16 @@ body {
 }
 
 .details p {
-  margin: 5px 0;
+  margin: 5% auto;
+  font-size: 14px; /* 텍스트 크기 */
+  font-weight: bold;
+}
+
+.details p:first-of-type {
+  white-space: nowrap; /* 텍스트를 한 줄로 표시 */
+  overflow: hidden; /* 넘치는 텍스트를 숨김 */
+  text-overflow: ellipsis;
+  
 }
 
 .inline-details {
@@ -184,6 +209,7 @@ body {
   justify-content: space-between; /* 요소 간 간격을 균등하게 배치 */
   gap: 10px; /* 요소 간 간격 */
 }
+
 
 .inline-details p {
   margin: 0; /* 기본 여백 제거 */
@@ -223,3 +249,22 @@ body {
   background-color: #ddd;
 }
 
+.overlay {
+  position: absolute; /* 부모 요소를 기준으로 위치 설정 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* 반투명 검정 배경 */
+  color: white; /* 텍스트 색상 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* 초기 상태에서 숨김 */
+  transition: opacity 0.3s ease; /* 부드러운 전환 효과 */
+}
+
+.poster:hover .overlay {
+  opacity: 1; /* 마우스를 올리면 오버레이 표시 */
+}
