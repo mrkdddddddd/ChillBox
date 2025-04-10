@@ -1,0 +1,112 @@
+<h2>빠른예매</h2>
+<div class="seat">
+  <div>
+    <div class="seat-util">
+      <h3>관람인원선택</h3>
+
+      <button class="reset">
+        <img src="../../common/images/recycle.png" />초기화
+      </button>
+    </div>
+    <div class="seat-select">
+      <div class="seat-count">
+        <span class="count-title">
+          <p>성인</p>
+          <span class="count-button">
+            <button class="down">-</button>
+            <button class="count" value="12000">0</button>
+            <button class="up">+</button>
+          </span>
+        </span>
+        <span class="count-title">
+          <p>청소년</p>
+          <span class="count-button">
+            <button class="down">-</button>
+            <button class="count" value="11000">0</button>
+            <button class="up">+</button>
+          </span>
+        </span>
+        <span class="count-title">
+          <p>노약자</p>
+          <span class="count-button">
+            <button class="down">-</button>
+            <button class="count" value="10000">0</button>
+            <button class="up">+</button>
+          </span>
+        </span>
+      </div>
+      <div class="seat-select-detail">
+        <div class="screen">
+          <p>SCREEN</p>
+        </div>
+        <div id="seat"></div>
+      </div>
+    </div>
+  </div>
+  <div id="selected-movie" class="selected-movie">
+    <div class="tit-area">
+      <span class="age"></span>
+      <p class="tit"></p>
+      <p class="cate"></p>
+    </div>
+    <div class="info-area">
+      <p class="theater">KOSA THEATER</p>
+      <p class="special">1관</p>
+      <p class="date">25-04-11</p>
+      <p class="time">10:00</p>
+      <p class="poster">
+        <img src="" />
+      </p>
+    </div>
+    <div class="choice-seat-area">
+      <div class="legend">
+        <ul>
+          <li>
+            <img
+              src="https://img.megabox.co.kr/static/pc/images/common/bg/bg-seat-condition-choice-s.png"
+            />
+            <span>선택</span>
+          </li>
+          <li>
+            <img
+              src="https://img.megabox.co.kr/static/pc/images/common/bg/bg-seat-condition-finish-s.png"
+            />
+            <span>예매완료</span>
+          </li>
+          <li>
+            <img
+              src="https://img.megabox.co.kr/static/pc/images/common/bg/bg-seat-condition-common-s.png"
+            />
+            <span>일반</span>
+          </li>
+        </ul>
+      </div>
+      <div class="seat-num">
+        <p>선택좌석</p>
+        <div class="myseat">
+          <div class="choice" id="seat1">-</div>
+          <div class="choice" id="seat2">-</div>
+          <div class="choice" id="seat3">-</div>
+          <div class="choice" id="seat4">-</div>
+          <div class="choice" id="seat5">-</div>
+          <div class="choice" id="seat6">-</div>
+          <div class="choice" id="seat7">-</div>
+          <div class="choice" id="seat8">-</div>
+        </div>
+      </div>
+    </div>
+    <div class="last-div">
+      <div id="people">
+        <span class="person-type"></span>
+      </div>
+      <div class="total-price">
+        <span>최종결제금액</span>
+        <strong>0원</strong>
+      </div>
+    </div>
+    <div class="btn-area">
+      <button class="before">이전</button>
+      <button class="next">다음</button>
+    </div>
+  </div>
+</div>
