@@ -270,14 +270,22 @@
 
         selectedMovies.forEach((movie) => {
           createMovieShowtimes(movie);
-        });
 
-        $(document).on("click", ".time-slot", function () {
-          $(".time-slot").removeClass("selected");
-          $(this).addClass("selected");
+          $(document).on("click", ".time-slot", function () {
+            $(".time-slot").removeClass("selected");
+            $(this).addClass("selected");
 
-          selectedTimeSlot = $(this).data("time");
-          console.log("선택된 시간:", selectedTimeSlot);
+            selectedTimeSlot = $(this).data("time");
+            console.log("선택된 시간:", selectedTimeSlot);
+            window.location.href =
+              "../../view/reservation/reservation.html?movieId=" +
+              movie.id +
+              "&date=" +
+              selectedDate +
+              "&time=" +
+              selectedTimeSlot +
+              "&";
+          });
         });
       }
 

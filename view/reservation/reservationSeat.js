@@ -98,19 +98,43 @@ $(function () {
           });
         });
     });
-  });
-});
+    //create selected-movie
+    let movieNum = 0;
+    $.get("../../common/data/tmp_data.json", function (data) {
+      const urlParams = document.URL.substring(56).split("&");
+      const movieId = urlParams[0].split("=")[1];
+      const movieDate = urlParams[1].split("=")[1];
+      const movieTime = urlParams[2].split("=")[1];
+      movieNum = movieId;
 
-$(function () {
-  //create selected-movie
-  let movieNum = 0;
-  $.get("../../common/data/tmp_data.json", function (data) {
-    const $selectedMovie = $(".selected-movie");
-    const movie = data.movie[movieNum];
+      const $selectedMovie = $(".selected-movie");
+      const movie = data.movie[movieNum];
 
-    $selectedMovie.find(".age").text(parseInt(movie.grade));
-    $selectedMovie.find(".tit").text(movie.name);
-    $selectedMovie.find(".cate").text(movie.genre);
-    $selectedMovie.find(".poster img").attr("src", movie.imgSrc);
+      $selectedMovie.find(".age").text(parseInt(movie.grade));
+      $selectedMovie.find(".tit").text(movie.name);
+      $selectedMovie.find(".cate").text(movie.genre);
+      $selectedMovie.find(".poster img").attr("src", movie.imgSrc);
+      $(".date").text(movieDate);
+      $(".time").text(movieTime);
+    });
+
+    $(".next").click(function () {
+      const urlParams = document.URL.substring(56).split("&");
+      const movieId = urlParams[0].split("=")[1];
+      const movieDate = urlParams[1].split("=")[1];
+      const movieTime = urlParams[2].split("=")[1];
+      console.log(selectedSeats);
+      const seatUrl = "seats=" + selectedSeats.join(",");
+      window.location.href =
+        "../../view/reserv_result/reserv_result.html?movieId=" +
+        movieId +
+        "&date=" +
+        movieDate +
+        "&time=" +
+        movieTime +
+        "&" +
+        seatUrl +
+        "&";
+    });
   });
 });
