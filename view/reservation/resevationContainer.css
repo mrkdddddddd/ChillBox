@@ -6,7 +6,7 @@
 }
 .seat-util {
   display: flex;
-  width: 700px;
+  width: 600px;
   align-items: center;
   justify-content: space-between;
 }
@@ -26,7 +26,7 @@ button.reset img {
 div.seat-select {
   display: inline-block;
   border: #d8d9db solid 1px;
-  width: 700px;
+  width: 600px;
   min-height: 400px;
 }
 div.seat-select div.seat-count {
@@ -116,6 +116,7 @@ div.seat-select-detail div.screen {
 .selected-movie {
   display: inline-block;
   overflow: hidden;
+  min-width: 380px;
   left: 770px;
   top: 0;
   width: 300px;
@@ -222,7 +223,7 @@ div.seat-select-detail div.screen {
 .seat-num {
   display: inline;
   float: right;
-  width: 116px;
+  width: 150px;
   border-radius: 0 5px 5px 0;
   border: 1px solid #434343;
 }
@@ -237,7 +238,7 @@ div.seat-select-detail div.screen {
 }
 .seat-num .myseat {
   overflow: hidden;
-  padding: 0 14px 14px 14px;
+  padding: 0 14px 14px 30px;
 }
 .seat-num .myseat .choice {
   display: block;
