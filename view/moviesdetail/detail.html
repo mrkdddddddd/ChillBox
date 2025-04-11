@@ -5,45 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Movie Details</title>
   <link rel="stylesheet" href="detail.css">
-  <script src="../../control/jquery.js"></script>
-</head>
-<body>
-  <!-- 상단 영화 정보 -->
-  <header>
-    <nav class="nav">
-      <div class="navdiv1">
-        <img class="hamburger" src="../../common/images/hamburger.png" alt="hamburger" />
-        <p>영화</p>
-        <p>예매</p>
-        <p>극장</p>
-      </div>
-      <div class="logo-div">
+  <link rel="stylesheet" href="../../view/footer/footer.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+/>
+  <script src="../../control/jquery.js"></script>  
+  <script type="text/javascript">
+    $(function () {
+      $.get("../../view/footer/footer.html", function (data) {
+        $("footer>div").append(data);
+      });
+    });
+  </script>
+  <nav class="nav">
+    <div>
+      <img class="hamburger" src="../../common/images/hamburger.png" alt="hamburger" />
+    </div>
+    <div class="navdiv">
+      <p>영화</p>
+      <p>예매</p>
+      <p>극장</p>
+    </div>
+    <div class="logo-div">
+      <a href="/view/mainpage/main.html">
         <img class="logo" src="../../common/images/logo.png" alt="logo" />
-      </div>
-      <div class="navdiv2">
-        <p>이벤트</p>
-        <p>스토어</p>
-        <p>혜택</p>
-        <img class="person" src="../../common/images/person.png" alt="person" />
-      </div>
-    </nav>
-  </header>
-      
+      </a>
+    </div>
+    <div class="navdiv">
+      <p>이벤트</p>
+      <p>스토어</p>
+      <p>혜택</p>
+    </div>
+    <div>
+      <img class="person" src="../../common/images/person.png" alt="person" />
+    </div>
+  </nav>
+</head>
+
+<body>        
   <div class="movie-header">  
     <div class="movie-info">
       <h1>진격의 거인 완결편 더 라스트 어택</h1>
-      <h2>Attack on Titan The Movie : THE LAST ATTACK</h2>
-      <div class="movie-stats">
-        <span>하트</span>
-        <span>평점</span>
-        <span>조회수</span>
-      </div>
+      <h2>Attack on Titan The Movie : THE LAST ATTACK</h2>      
     </div>  
     <div class="movie-poster">
       <div class="poster">
         <img class="poster-image" src="https://img.megabox.co.kr/SharedImg/2025/03/19/t1aws8JYeDCKaCbRntA8oalmQ2UW33ua_420.jpg" alt="poster" />
-      </div>
+      </div>   
       <button class="reserve-button">예매</button>
+      
+      
+      
     </div>       
   </div>
   
@@ -85,5 +98,8 @@
   </section>
   
   <script type="text/javascript" src="../../control/detail.js"></script>
+  <footer class="footer">
+    <div></div>
+  </footer>
 </body>
 </html>

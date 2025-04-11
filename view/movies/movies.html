@@ -5,30 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Movies</title>
   <link rel="stylesheet" href="movies.css">
+  <link rel="stylesheet" href="../../view/footer/footer.css" /> 
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+/>
   <script src="../../control/jquery.js"></script>
-</head>
-<header>
-  <!-- 네비게이션 -->
-  <nav class="nav">    
-    <div class="navdiv1">
+  <script type="text/javascript">
+    $(function () {
+      $.get("../../view/footer/footer.html", function (data) {
+        $("footer>div").append(data);
+      });
+    });          
+  </script>
+
+  <nav class="nav">
+    <div>
       <img class="hamburger" src="../../common/images/hamburger.png" alt="hamburger" />
+    </div>
+    <div class="navdiv">
       <p>영화</p>
       <p>예매</p>
       <p>극장</p>
     </div>
-    
     <div class="logo-div">
-      <img class="logo" src="../../common/images/logo.png" alt="logo" />
+      <a href="../../view/mainpage/main.html">
+        <img class="logo" src="../../common/images/logo.png" alt="logo" />
+      </a>
     </div>
-    
-    <div class="navdiv2">
+    <div class="navdiv">
       <p>이벤트</p>
       <p>스토어</p>
       <p>혜택</p>
+    </div>
+    <div>
       <img class="person" src="../../common/images/person.png" alt="person" />
     </div>
   </nav>
-</header>
+</head>
+
 
 <body>  
   <div id="movieid" class="movie-header">
@@ -75,5 +90,8 @@
   </div>
  
   <script type="text/javascript" src="../../control/movies.js"></script>
+  <footer class="footer">
+    <div></div>
+  </footer>
 </body>
 </html>
