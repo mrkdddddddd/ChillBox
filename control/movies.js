@@ -33,10 +33,32 @@ $(function () {
       // 검색 버튼 클릭 이벤트
       $(".search-button").click(function () {
         const searchQuery = $(".search-input").val().toLowerCase(); // 검색어를 소문자로 변환
-        const filteredMovies = movieList.filter(moveArr =>
-          moveArr.name.toLowerCase().includes(searchQuery) // 영화 이름에 검색어가 포함된 경우 필터링
-        );
-        $mainSection.append(filteredMovies); // 필터링된 영화 목록 렌더링
+        let filteredMovies = movieList.filter(moveArr =>{
+          return moveArr.name.toLowerCase().includes(searchQuery) // 영화 이름에 검색어가 포함된 경우 필터링
+      }
+        );     
+        $mainSection.empty();
+        $.each(filteredMovies, function (index, moveArr) {
+          const mInfo = `
+            <div class="info">                                                                  
+              <div class="poster">
+                <img src="${moveArr.imgSrc}" alt="${moveArr.name}"><br>
+              </div>
+              <div class="details">
+                <p>${moveArr.name}</p>
+                <div class="inline-details">
+                  <p>예매율: ${moveArr.rate}</p>
+                  <p>개봉일: ${moveArr.date}</p>
+                </div>                             
+              </div>            
+              <button>예매</button>                                  
+            </div>            
+          `;
+          $mainSection.append(mInfo);
+        });
+
+
+
       });
 
       $(".info button").click(function () {
