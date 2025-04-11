@@ -11,6 +11,11 @@
   background-repeat: no-repeat;
 }
 
+.poster:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
 .card {
   width: 220px;
   display: flex;
@@ -28,7 +33,7 @@
 
 .pick {
   width: 64px;
-  height: 24px;
+  height: 28px;
   display: flex;
   column-gap: 4px;
   align-items: center;
@@ -39,7 +44,7 @@
 
 .buttonDiv button {
   width: 120px;
-  height: 26px;
+  height: 30px;
   background-color: #503396;
   border: 1px solid #503396;
   border-radius: 4px;

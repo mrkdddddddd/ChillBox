@@ -11,8 +11,8 @@
   </head>
   <body>
     <h3 style="text-align: center">박스오피스</h3>
-    <p class="plus" style="text-align: end; padding-right: 48px">
-      <a href="" style="text-decoration: none">
+    <p class="plus">
+      <a href="/view/movies/movies.html" style="text-decoration: none">
         더 많은 영화 보기
         <i class="fa-solid fa-plus"></i>
       </a>
@@ -74,6 +74,9 @@
               const movieId = $(this).data("movie-id");
               window.location.href =
                 "../../view/booking/main_booking.html?movieId=" + movieId;
+            });
+            $(".poster").click(function () {
+              window.location.href = "/view/moviesdetail/detail.html";
             });
           }
         );
