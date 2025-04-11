@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Movie Details</title>
   <link rel="stylesheet" href="detail.css">
+    <link rel="stylesheet" href="../nav/nav.css" />
   <link rel="stylesheet" href="../../view/footer/footer.css" />
   <link
   rel="stylesheet"
@@ -12,38 +13,21 @@
 />
   <script src="../../control/jquery.js"></script>  
   <script type="text/javascript">
+      $(function () {
+        $.get("../../view/nav/nav.html", function (data) {
+          $("header").append(data);
+        });
+      });
     $(function () {
       $.get("../../view/footer/footer.html", function (data) {
         $("footer>div").append(data);
       });
     });
   </script>
-  <nav class="nav">
-    <div>
-      <img class="hamburger" src="../../common/images/hamburger.png" alt="hamburger" />
-    </div>
-    <div class="navdiv">
-      <p>영화</p>
-      <p>예매</p>
-      <p>극장</p>
-    </div>
-    <div class="logo-div">
-      <a href="/view/mainpage/main.html">
-        <img class="logo" src="../../common/images/logo.png" alt="logo" />
-      </a>
-    </div>
-    <div class="navdiv">
-      <p>이벤트</p>
-      <p>스토어</p>
-      <p>혜택</p>
-    </div>
-    <div>
-      <img class="person" src="../../common/images/person.png" alt="person" />
-    </div>
-  </nav>
 </head>
 
 <body>        
+    <header></header> 
   <div class="movie-header">  
     <div class="movie-info">
       <h1>진격의 거인 완결편 더 라스트 어택</h1>
@@ -59,13 +43,7 @@
       
     </div>       
   </div>
-  
-  <!-- 탭 메뉴 -->
-  <div class="tabs">
-    <button class="tab-button active">주요정보</button>
-    <button class="tab-button">실관람평</button>
-    <button class="tab-button">예고편</button>
-  </div>
+
     <!-- 탭 메뉴 -->
     <div class="tabs">
       <button class="tab-button active">주요정보</button>
@@ -105,7 +83,16 @@
       />
     </div>
   </section>
-  
+    <!-- 댓글 섹션 -->
+  <section class="comments-section">
+    <h3>진격의 거인 완결편 더 라스트 어택에 대한 30개의 이야기가 있어요</h3>
+    <div class="comment">
+      <p><strong></strong></p>
+      <p></p>
+      <p></p>
+    </div>
+  </section>
+
   <script type="text/javascript" src="../../control/detail.js"></script>
   <footer class="footer">
     <div></div>
