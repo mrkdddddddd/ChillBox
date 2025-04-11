@@ -159,6 +159,15 @@ $(function () {
       const movieTime = urlParams[2].split("=")[1];
       const seatUrl = "seats=" + selectedSeats.join(",");
       alert("결제가 완료되었습니다.");
+      localStorage.setItem(
+        "record",
+        JSON.stringify({
+          movieId: movieId,
+          movieDate: movieDate,
+          movieTime: movieTime,
+          selectedSeats: selectedSeats,
+        })
+      );
       window.location.href =
         "../../view/reserv_result/reserv_result.html?movieId=" +
         movieId +
