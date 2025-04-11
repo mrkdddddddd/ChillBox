@@ -279,7 +279,7 @@
             console.log("선택된 시간:", selectedTimeSlot);
             window.location.href =
               "../../view/reservation/reservation.html?movieId=" +
-              movie.id +
+              (parseInt(this.id) - 1) +
               "&date=" +
               selectedDate +
               "&time=" +
@@ -336,7 +336,9 @@
           const remainingSeats = 10 + Math.floor(Math.random() * 140);
 
           const timeSlot = $(
-            '<div class="time-slot" data-time="' +
+            '<div id="' +
+              movie.id +
+              '" class="time-slot" data-time="' +
               startTime +
               '">' +
               '<div class="start-time">' +
