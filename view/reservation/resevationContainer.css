@@ -27,6 +27,7 @@ div.seat-select {
   display: inline-block;
   border: #d8d9db solid 1px;
   width: 700px;
+  min-height: 400px;
 }
 div.seat-select div.seat-count {
   display: flex;
@@ -70,7 +71,7 @@ div.seat-select div.seat-count span.count-button button.up {
 }
 div.seat-select-detail {
   width: 100%;
-  margin: 20px 0;
+  margin: 50px 0;
 }
 div.seat-select-detail div.screen {
   align-content: center;
