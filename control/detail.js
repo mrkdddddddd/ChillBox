@@ -26,7 +26,9 @@ $(function () {
       });
     },
   });
-
+  $(".reserve-button").click(function () {
+    window.location.href = "/view/booking/main_booking.html";
+  });
   // $('.tab-button').click(function () {
   //   // 모든 탭 버튼에서 active 클래스 제거
   //   $('.tab-button').removeClass('active');
