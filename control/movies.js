@@ -39,6 +39,9 @@ $(function () {
         $mainSection.append(filteredMovies); // 필터링된 영화 목록 렌더링
       });
 
+      $(".info button").click(function () {
+        window.location.href = "/view/booking/main_booking.html";
+      });
     }
   });
 
