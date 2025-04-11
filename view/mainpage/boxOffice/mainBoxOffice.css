@@ -17,3 +17,12 @@ h3 {
   justify-content: center;
   margin-bottom: 80px;
 }
+.plus {
+  text-align: end;
+  padding-right: 48px;
+}
+
+.plus a {
+  text-decoration: none;
+  color: #503396;
+}
