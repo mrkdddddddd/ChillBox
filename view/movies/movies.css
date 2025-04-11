@@ -8,7 +8,7 @@ body {
   color: #333;
 }
 
-.nav {
+/* .nav {
   width: 100%;
   height: 80px;
   border-bottom: 1px solid gray;
@@ -55,7 +55,45 @@ body {
   height: auto;
   margin-top: 0%;
   margin-right: 0%;
+} */
+.nav {
+  width: 100vw;
+  height: 80px;
+  border-bottom: 1px solid gray;
+  background-color: #503396;
+  border-bottom: 1px solid gray;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 24px;
 }
+.navdiv {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  justify-content: space-evenly;
+}
+.logo {
+  flex-grow: 1;
+  width: 140px;
+  height: 75px;
+}
+
+.hamburger {
+  filter: invert(100%);
+  width: 32px;
+  height: auto;
+  margin-left: 10px;
+}
+
+.person {
+  filter: invert(100%);
+  width: 32px;
+  height: auto;
+  margin-top: 10px;
+}
+
 
 h1, h2, h3, p {
   margin: 0;
@@ -140,7 +178,7 @@ h1, h2, h3, p {
   flex-wrap: wrap; /* 화면 크기에 따라 줄바꿈 */
   gap: 20px; /* 카드 간 간격 */
   justify-content: center; /* 중앙 정렬 */  
-  margin: 5% auto auto auto;
+  margin: 5% auto auto 10%;
 }
 
 .movie-card {
@@ -178,7 +216,7 @@ h1, h2, h3, p {
 }
 
 .info {    
-  width: 20%; /* 카드 너비 */
+  width: 30%; /* 카드 너비 */
   text-align: center; /* 텍스트 중앙 정렬 */
   background-color: #f9f9f9; /* 배경색 */    
   padding: 5%;
