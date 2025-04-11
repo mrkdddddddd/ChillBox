@@ -21,6 +21,58 @@ $(function () {
     html += `</div>`;
     $("#seat").append(html);
 
+    let countNum = 0;
+    $(".seat-select .seat-count .count-title").each(function () {
+      $(this)
+        .find(".count-button button")
+        .click(function () {
+          let totalPrice = 0;
+
+          if ($(this).hasClass("up")) {
+            if (countNum >= 8) {
+              alert("최대 8명까지 선택 가능합니다.");
+            } else {
+              $(this)
+                .prev()
+                .text(parseInt($(this).prev().text()) + 1);
+              countNum++;
+            }
+          } else if ($(this).hasClass("down")) {
+            if (parseInt($(this).next().text()) > 0) {
+              $(this)
+                .next()
+                .text(parseInt($(this).next().text()) - 1);
+              countNum--;
+            }
+          }
+          let html = "";
+          $(".seat-select .seat-count .count-title").each(function () {
+            totalPrice +=
+              parseInt($(this).find(".count").text()) *
+              parseInt($(this).find(".count").val());
+
+            if ($(this).find(".count").val() == 12000) {
+              if ($(this).find(".count").text() == 0) {
+                return;
+              }
+              html += `성인 ${$(this).find(".count").text()} `;
+            } else if ($(this).find(".count").val() == 11000) {
+              if ($(this).find(".count").text() == 0) {
+                return;
+              }
+              html += `청소년 ${$(this).find(".count").text()} `;
+            } else if ($(this).find(".count").val() == 10000) {
+              if ($(this).find(".count").text() == 0) {
+                return;
+              }
+              html += `노약자 ${$(this).find(".count").text()} `;
+            }
+            $(".person-type").text(html);
+
+            $(".total-price strong").text(totalPrice + "원");
+          });
+        });
+    });
     // click event for seat button
     let selectedSeats = [];
     $(".btn-seat").click(function () {
@@ -32,6 +84,10 @@ $(function () {
           document.querySelectorAll(".choice")[index].innerText = "-";
         }
       } else {
+        if (selectedSeats.length >= countNum) {
+          alert("선택된 좌석 수가 선택된 인원 수를 초과되었습니다.");
+          return;
+        }
         $(this).addClass("selected");
         selectedSeats.push(this.value);
         $(this).css(
@@ -52,6 +108,8 @@ $(function () {
       }
       document.querySelector(".total-price strong").innerText = "0원";
       selectedSeats = [];
+
+      countNum = 0;
       $(".btn-seat").removeClass("selected");
       $(".btn-seat").css("background-image", "none");
       for (let index = 0; index < 3; index++) {
@@ -62,42 +120,6 @@ $(function () {
       $(".person-type").text("");
     });
 
-    $(".seat-select .seat-count .count-title").each(function () {
-      $(this)
-        .find(".count-button button")
-        .click(function () {
-          let totalPrice = 0;
-          if ($(this).hasClass("up")) {
-            $(this)
-              .prev()
-              .text(parseInt($(this).prev().text()) + 1);
-          } else if ($(this).hasClass("down")) {
-            if (parseInt($(this).next().text()) > 0) {
-              $(this)
-                .next()
-                .text(parseInt($(this).next().text()) - 1);
-            }
-          }
-          let html = "";
-          $(".seat-select .seat-count .count-title").each(function () {
-            totalPrice +=
-              parseInt($(this).find(".count").text()) *
-              parseInt($(this).find(".count").val());
-
-            console.log(this);
-            if ($(this).find(".count").val() == 12000) {
-              html += `성인 ${$(this).find(".count").text()} `;
-            } else if ($(this).find(".count").val() == 11000) {
-              html += `청소년 ${$(this).find(".count").text()} `;
-            } else if ($(this).find(".count").val() == 10000) {
-              html += `노약자 ${$(this).find(".count").text()} `;
-            }
-            $(".person-type").text(html);
-
-            $(".total-price strong").text(totalPrice + "원");
-          });
-        });
-    });
     //create selected-movie
     let movieNum = 0;
     $.get("../../common/data/tmp_data.json", function (data) {
@@ -119,12 +141,24 @@ $(function () {
     });
 
     $(".next").click(function () {
+      if (selectedSeats.length == 0) {
+        alert("좌석을 선택해주세요.");
+        return;
+      }
+      if (countNum == 0) {
+        alert("인원을 선택해주세요.");
+        return;
+      }
+      if (selectedSeats.length != countNum) {
+        alert("선택된 인원 수와 좌석 수가 일치하지 않습니다.");
+        return;
+      }
       const urlParams = document.URL.substring(56).split("&");
       const movieId = urlParams[0].split("=")[1];
       const movieDate = urlParams[1].split("=")[1];
       const movieTime = urlParams[2].split("=")[1];
-      console.log(selectedSeats);
       const seatUrl = "seats=" + selectedSeats.join(",");
+      alert("결제가 완료되었습니다.");
       window.location.href =
         "../../view/reserv_result/reserv_result.html?movieId=" +
         movieId +

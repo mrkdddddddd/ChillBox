@@ -72,8 +72,7 @@
             $(".boxoffice-container").html(cardsHTML);
             $(".boxoffice-container button").on("click", function () {
               const movieId = $(this).data("movie-id");
-              window.location.href =
-                "../../view/booking/main_booking.html?movieId=" + movieId;
+              window.location.href = "../../view/booking/main_booking.html";
             });
             $(".poster").click(function () {
               window.location.href = "/view/moviesdetail/detail.html";
